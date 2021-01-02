@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>myrvogna@myrvogna.net</email>
+		<name>myrvogna</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">myrvogna/fr-afnor</remote-id>
+	</upstream>
+	<longdescription>
+        Console keymap for the French new AZERTY layout AFNOR NF Z71-300.
+	</longdescription>
+</pkgmetadata>
