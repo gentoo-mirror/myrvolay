@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>myrvogna@myrvogna.net</email>
+		<name>myrvogna</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">RPi-Distro/firmware-nonfree</remote-id>
+	</upstream>
+	<longdescription>
+        Firmware files for the BCM43456 integrated WiFi and
+        Bluetooth chip on the Raspberry Pi 400
+	</longdescription>
+</pkgmetadata>
