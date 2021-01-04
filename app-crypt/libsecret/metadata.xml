@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>myrvogna@myrvogna.net</email>
+		<name>myrvogna</name>
+	</maintainer>
+	<longdescription>
+        Object library for accessing the freedesktop.org Secret Service API.
+        Ebuild allowing the use of KeePassXC as an alternative to gnome-keyring.
+	</longdescription>
+</pkgmetadata>
