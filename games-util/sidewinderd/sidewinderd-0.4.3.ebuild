@@ -1,5 +1,6 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+
 EAPI=7
 
 inherit cmake
@@ -13,8 +14,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-    dev-libs/libconfig
-    dev-libs/tinyxml2
-    virtual/libudev
+	dev-libs/libconfig
+	dev-libs/tinyxml2
+	virtual/libudev
 "
 RDEPEND="${DEPEND}"

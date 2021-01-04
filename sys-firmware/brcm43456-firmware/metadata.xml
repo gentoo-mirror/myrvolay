@@ -9,7 +9,7 @@
 		<remote-id type="github">RPi-Distro/firmware-nonfree</remote-id>
 	</upstream>
 	<longdescription>
-        Firmware files for the BCM43456 integrated WiFi and
-        Bluetooth chip on the Raspberry Pi 400
+		Firmware files for the BCM43456 integrated WiFi and
+		Bluetooth chip on the Raspberry Pi 400
 	</longdescription>
 </pkgmetadata>

@@ -9,6 +9,6 @@
 		<remote-id type="github">fulhax/ncpamixer</remote-id>
 	</upstream>
 	<longdescription>
-        An ncurses mixer for PulseAudio inspired by pavucontrol.
+		An ncurses mixer for PulseAudio inspired by pavucontrol.
 	</longdescription>
 </pkgmetadata>

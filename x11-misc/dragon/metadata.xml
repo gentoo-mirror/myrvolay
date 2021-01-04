@@ -9,6 +9,6 @@
 		<remote-id type="github">mwh/dragon</remote-id>
 	</upstream>
 	<longdescription>
-        Simple drag-and-drop source/sink for X and Wayland.        
+		Simple drag-and-drop source/sink for X and Wayland.		   
 	</longdescription>
 </pkgmetadata>

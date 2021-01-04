@@ -1,5 +1,6 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+
 EAPI=7
 
 inherit cmake
@@ -11,20 +12,18 @@ SRC_URI="https://github.com/fulhax/ncpamixer/archive/${PV}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+wide"
 
 DEPEND="
-    media-sound/pulseaudio
-    dev-util/cmake
+	media-sound/pulseaudio
 "
 RDEPEND="${DEPEND}"
 
 CMAKE_USE_DIR="${S}/src"
 
 src_configure() {
-    local mycmakeargs=(
-        -DUSE_WIDE="$(usex wide)"
-    )
+	local mycmakeargs=(
+		-DUSE_WIDE="$(usex wide)"
+	)
 
-    cmake_src_configure
+	cmake_src_configure
 }

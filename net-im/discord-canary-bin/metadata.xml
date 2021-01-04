@@ -2,10 +2,10 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>myrvogna@myrvogna.net</email>
+	<email>myrvogna@myrvogna.net</email>
 		<name>myrvogna</name>
 	</maintainer>
 	<longdescription>
-        Alpha testing version of the Discord client.
+		Alpha testing version of the Discord client.
 	</longdescription>
 </pkgmetadata>

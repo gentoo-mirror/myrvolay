@@ -1,5 +1,6 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+
 EAPI=7
 
 DESCRIPTION="Simple drag-and-drop source/sink for X and Wayland"
@@ -14,6 +15,6 @@ DEPEND=">=x11-libs/gtk+-3.0"
 RDEPEND="${DEPEND}"
 
 src_install() {
-    emake PREFIX="${D}/usr/bin" install
-    dodoc README
+	emake PREFIX="${D}/usr/bin" install
+	dodoc README
 }

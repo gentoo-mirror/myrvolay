@@ -71,12 +71,12 @@ src_prepare() {
 	default
 
 	sed -i \
-        -e "s:/usr/share/${MY_PN}/${MY_BIN}:/opt/${MY_PN}/${MY_BIN}:g" \
-        usr/share/${MY_PN}/${MY_PN}.desktop || die
+		-e "s:/usr/share/${MY_PN}/${MY_BIN}:/opt/${MY_PN}/${MY_BIN}:g" \
+		usr/share/${MY_PN}/${MY_PN}.desktop || die
 }
 
 src_install() {
-    newicon usr/share/${MY_PN}/discord.png ${MY_PN}.png
+	newicon usr/share/${MY_PN}/discord.png ${MY_PN}.png
 	domenu usr/share/${MY_PN}/${MY_PN}.desktop
 
 	insinto /opt/${MY_PN}

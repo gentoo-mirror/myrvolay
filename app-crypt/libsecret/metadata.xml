@@ -6,7 +6,7 @@
 		<name>myrvogna</name>
 	</maintainer>
 	<longdescription>
-        Object library for accessing the freedesktop.org Secret Service API.
-        Ebuild allowing the use of KeePassXC as an alternative to gnome-keyring.
+		Object library for accessing the freedesktop.org Secret Service API.
+		Ebuild allowing the use of KeePassXC as an alternative to gnome-keyring.
 	</longdescription>
 </pkgmetadata>
