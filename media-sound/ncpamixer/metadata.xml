@@ -11,4 +11,7 @@
 	<longdescription>
 		An ncurses mixer for PulseAudio inspired by pavucontrol.
 	</longdescription>
+	<use>
+		<flag name="wide">Add ncurses widecharacter support</flag>
+	</use>
 </pkgmetadata>
