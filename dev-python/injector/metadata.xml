@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>myrvogna@myrvogna.net</email>
+		<name>myrvogna</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="pypi">injector</remote-id>
+	</upstream>
+	<longdescription>
+		Python dependency injection framework, inspired by Guice.
+	</longdescription>
+</pkgmetadata>
