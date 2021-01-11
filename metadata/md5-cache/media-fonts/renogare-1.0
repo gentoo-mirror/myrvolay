@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DESCRIPTION=A modern geometric sans serif typeface (regular and soft variants)
+EAPI=7
+HOMEPAGE=https://www.creativefabrica.com/product/renogare/
+IUSE=X
+KEYWORDS=~amd64 ~arm64
+LICENSE=Renogare
+SLOT=0
+_eclasses_=font	dd073b36fe3fd8b868c23bc23209db45
+_md5_=84021e845899f0dbc84b3260c2b85a91
