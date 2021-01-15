@@ -14,20 +14,26 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-# TODO: Potential X11 flag for a pure Wayland build? Don't have the means to check myself.
-IUSE="discord-presence egl +qt5 sdl -wayland"
+# TODO: Potential X11 flag to allow for a pure Wayland build?
+# Don't have the means to check myself, help would be welcome.
+IUSE="discord egl +qt5 sdl +sdl2 -wayland"
+
+# Either or both frontends must be built - no CLI is available
 REQUIRED_USE="
+	|| ( qt5 sdl )
+	sdl? ( sdl2 )
 	wayland? ( egl )
 "
 
 DEPEND="
 	sdl? ( media-libs/libsdl2 )
-	>=x11-libs/gtk+-3
+	sdl2? ( media-libs/libsdl2 )
 	qt5? (
 			dev-qt/qtcore
 			dev-qt/qtgui
 			dev-qt/qtnetwork
 	)
+	>=x11-libs/gtk+-3.24.20
 "
 RDEPEND="${DEPEND}"
 
@@ -38,10 +44,10 @@ src_configure() {
 	local mycmakeargs=(
 		-DBUILD_SDL_FRONTEND=$(usex sdl)
 		-DBUILD_QT_FRONTEND=$(usex qt5)
-		-DUSE_SDL2=$(usex sdl)
+		-DUSE_SDL2=$(usex sdl2)
 		-DUSE_WAYLAND=$(usex wayland)
 		-DUSE_EGL=$(usex egl)
-		–DENABLE_DISCORD_PRESENCE=$(usex discord-presence)
+		–DENABLE_DISCORD_PRESENCE=$(usex discord)
 
 		# Override cmake.eclass defaults
 		-DBUILD_SHARED_LIBS=OFF
