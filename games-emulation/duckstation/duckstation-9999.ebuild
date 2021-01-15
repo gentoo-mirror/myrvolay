@@ -12,7 +12,7 @@ EGIT_CHECKOUT_DIR="${WORKDIR}/${PN}"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 
 # TODO: Potential X11 flag to allow for a pure Wayland build?
 # Don't have the means to check myself, help would be welcome.
