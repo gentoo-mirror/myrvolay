@@ -17,6 +17,6 @@
 		<flag name="egl">Enable EGL support</flag>
 		<flag name="qt5">Build the QT frontend</flag>
 		<flag name="sdl">Build the SDL frontend</flag>
-		<flag name="sdl2">Link with SDL2 for controller support</flag>
+		<flag name="gamepad">Link with SDL2 for controller support</flag>
 	</use>
 </pkgmetadata>
