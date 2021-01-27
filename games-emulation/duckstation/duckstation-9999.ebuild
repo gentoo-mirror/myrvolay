@@ -14,23 +14,29 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
-# TODO: Potential X11 flag to allow for a pure Wayland build?
-# Don't have the means to check myself, help would be welcome.
-IUSE="discord egl +qt5 sdl +gamepad -wayland"
+IUSE="discord egl +gamepad qt5 sdl wayland X"
 
 # Either or both frontends must be built - no CLI is available
+# Setting this so the user has to make a choice does not end up with a non-usable software
+# Do tell me if there is an use case (installing only the libraries?) I am not aware of here
 REQUIRED_USE="
 	|| ( qt5 sdl )
 	wayland? ( egl )
 "
 
+# Building without the X flag has not been tested extensively
+# It should work but some implied required dependencies might be not be listed here
 DEPEND="
-	sdl? ( media-libs/libsdl2 )
 	gamepad? ( media-libs/libsdl2 )
+	sdl? ( media-libs/libsdl2 )
 	qt5? (
 			dev-qt/qtcore
 			dev-qt/qtgui
 			dev-qt/qtnetwork
+	)
+	wayland? ( kde-frameworks/extra-cmake-modules )
+	X? (
+			x11-libs/libX11
 	)
 	>=x11-libs/gtk+-3.24.20
 "
@@ -41,11 +47,12 @@ S="${WORKDIR}/${PN}"
 
 src_configure() {
 	local mycmakeargs=(
-		-DBUILD_SDL_FRONTEND=$(usex sdl)
 		-DBUILD_QT_FRONTEND=$(usex qt5)
+		-DBUILD_SDL_FRONTEND=$(usex sdl)
+		-DUSE_EGL=$(usex egl)
 		-DUSE_SDL2=$(usex gamepad)
 		-DUSE_WAYLAND=$(usex wayland)
-		-DUSE_EGL=$(usex egl)
+		-DUSE_X11=$(usex X)
 		–DENABLE_DISCORD_PRESENCE=$(usex discord)
 
 		# Override cmake.eclass defaults
