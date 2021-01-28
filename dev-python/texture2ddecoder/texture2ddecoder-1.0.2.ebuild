@@ -4,12 +4,15 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{6..9} )
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="A python wrapper for Perfare's Texture2DDecoder"
 HOMEPAGE="https://github.com/K0lb3/texture2ddecoder"
-EGIT_REPO_URI="https://github.com/K0lb3/texture2ddecoder.git"
-EGIT_COMMIT="d05d5fd9bc38044bf4a7c762f4095ca07ca711c8"
+
+# Use commit of specific version
+GIT_COMMIT="d05d5fd9bc38044bf4a7c762f4095ca07ca711c8"
+SRC_URI="https://github.com/K0lb3/texture2ddecoder/archive/${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${GIT_COMMIT}"
 
 LICENSE="MIT"
 SLOT="0"
