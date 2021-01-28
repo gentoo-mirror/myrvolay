@@ -14,11 +14,13 @@ Please feel free to contact me if there is an issue with any of those, or if you
 ### Overlay content ###
 * app-crypt
   * [libsecret](https://packages.gentoo.org/packages/app-crypt/libsecret): allow for the use of KeePassXC as Secret Service API provider instead of gnome-keyring, will stay here until it gets implemented in the official repository
+* app-emulation
+  * [vkd3d-proton](https://github.com/HansKristian-Work/vkd3d-proton): Proton's Direct3D 12 implementation, forked from VKD3D
 * dev-libs
   * [discord-rpc](https://github.com/discord/discord-rpc): Discord Rich Presence library, for (later) use as a system library for other packages
 * dev-python
-  * *[injector](https://pypi.org/project/injector/)*
-  * *[py3nvml](https://pypi.org/project/py3nvml/)*
+  * *[injector](https://pypi.org/project/injector/)*: Python dependency injection framework, inspired by Guice
+  * *[py3nvml](https://pypi.org/project/py3nvml/)*: Python 3 Bindings for the NVIDIA Management Library
   * *[texture2ddecoder](https://github.com/K0lb3/texture2ddecoder)*: A Python wrapper for Perfare's Texture2DDecoder 
   * [unitypy](https://github.com/K0lb3/UnityPy): A Unity asset extractor for Python based on AssetStudio.
   * [yams](https://github.com/Berulacks/yams): Last.FM scrobbler for MPD
