@@ -16,6 +16,8 @@ Please feel free to contact me if there is an issue with any of those, or if you
   * [libsecret](https://packages.gentoo.org/packages/app-crypt/libsecret): allow for the use of KeePassXC as Secret Service API provider instead of gnome-keyring, will stay here until it gets implemented in the official repository
 * app-emulation
   * [vkd3d-proton](https://github.com/HansKristian-Work/vkd3d-proton): Proton's Direct3D 12 implementation, forked from VKD3D
+* app-misc
+  * [dragon](https://github.com/mwh/dragon): Drag-and-drop utility for X and Wayland
 * dev-libs
   * [discord-rpc](https://github.com/discord/discord-rpc): Discord Rich Presence library, for (later) use as a system library for other packages
 * dev-python
@@ -43,5 +45,3 @@ Please feel free to contact me if there is an issue with any of those, or if you
   * [brcm43456-firmware](https://github.com/RPi-Distro/firmware-nonfree): Firmware for the BCM3456 WiFi/BT chip of the Raspberry Pi 400
 * sys-power
   * [gwe](https://gitlab.com/leinardi/gwe): GreenWithEnvy, system utility for information, fan control and overclocking Nvidia GPUs
-* x11-misc
-  * [dragon](https://github.com/mwh/dragon): Drag-and-drop utility for X and Wayland
