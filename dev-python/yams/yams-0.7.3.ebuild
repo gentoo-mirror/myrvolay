@@ -26,6 +26,7 @@ DEPEND="
 	dev-python/psutil[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/python-mpd[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
 	media-sound/mpd
 "
 RDEPEND="${DEPEND}"
