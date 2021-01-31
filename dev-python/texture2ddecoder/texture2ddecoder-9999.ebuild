@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{7..9} )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="A python wrapper for Perfare's Texture2DDecoder"
