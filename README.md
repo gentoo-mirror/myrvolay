@@ -16,6 +16,9 @@ Please feel free to contact me if there is an issue with any of those, or if you
   * [libsecret](https://packages.gentoo.org/packages/app-crypt/libsecret): allow for the use of KeePassXC as Secret Service API provider instead of gnome-keyring, will stay here until it gets implemented in the official repository *(unkeyworded)*
 * app-emulation
   * [vkd3d-proton](https://github.com/HansKristian-Work/vkd3d-proton): Proton's Direct3D 12 implementation, forked from VKD3D
+* app-laptop
+  * [dell-bios-fan-control](https://github.com/TomFreudenberg/dell-bios-fan-control): Simple tool to enable or disable the SMBIOS fan (auto) fan control for certain Dell laptops
+  * [i8kutils](https://launchpad.net/i8kutils): Temperature and fan control utilities for certain Dell laptops
 * app-misc
   * [dragon](https://github.com/mwh/dragon): Drag-and-drop utility for X and Wayland
 * dev-libs
