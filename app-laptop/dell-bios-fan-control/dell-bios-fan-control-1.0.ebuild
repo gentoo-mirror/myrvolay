@@ -26,3 +26,9 @@ src_install() {
 	dodoc README.md
 	systemd_dounit "${FILESDIR}/dell-bios-fan-control.service"
 }
+
+pkg_postinst() {
+	ewarn "Turning off BIOS fan control could result in permanent hardware damage!"
+	ewarn "Make sure you have a fan control solution properly set up beforehand"
+	ewarn "such as the suggested app-laptop/i8kutils"
+}
