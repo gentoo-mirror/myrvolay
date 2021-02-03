@@ -20,6 +20,7 @@ Please feel free to contact me if there is an issue with any of those, or if you
   * [dell-bios-fan-control](https://github.com/TomFreudenberg/dell-bios-fan-control): Simple tool to enable or disable the SMBIOS fan (auto) fan control for certain Dell laptops
   * [i8kutils](https://launchpad.net/i8kutils): Temperature and fan control utilities for certain Dell laptops
 * app-misc
+  * [brightnessctl](https://github.com/Hummer12007/brightnessctl): A program to read and control device brightness
   * [dragon](https://github.com/mwh/dragon): Drag-and-drop utility for X and Wayland
 * dev-libs
   * [discord-rpc](https://github.com/discord/discord-rpc): Discord Rich Presence library, for (later) use as a system library for other packages
