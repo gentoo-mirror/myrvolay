@@ -7,8 +7,6 @@
 	</maintainer>
 	<upstream>
 		<remote-id type="pypi">injector</remote-id>
+		<remote-id type="github">alecthomas/injector</remote-id>
 	</upstream>
-	<longdescription>
-		Python dependency injection framework, inspired by Guice.
-	</longdescription>
 </pkgmetadata>
