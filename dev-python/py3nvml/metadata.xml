@@ -7,8 +7,6 @@
 	</maintainer>
 	<upstream>
 		<remote-id type="pypi">py3nvml</remote-id>
+		<remote-id type="github">fbcotter/py3nvml</remote-id>
 	</upstream>
-	<longdescription>
-		Python 3 bindings for the NVIDIA Management Library.
-	</longdescription>
 </pkgmetadata>
