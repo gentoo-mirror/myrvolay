@@ -35,6 +35,7 @@ Please feel free to contact me if there is an issue with any of those, or if you
 * games-util
   * [sidewinderd](https://github.com/tolga9009/sidewinderd): Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+
 * gui-apps
+  * [swaykbdd](https://github.com/artemsen/swaykbdd): Sway utility to change the keyboard on a per-window basis
   * [wev](https://git.sr.ht/~sircmpwn/wev): Wayland event viewer, analoguous to xev for X11
 * media-fonts
   * [material-design-icons](https://github.com/google/material-design-icons/): Google's Material Design icons
