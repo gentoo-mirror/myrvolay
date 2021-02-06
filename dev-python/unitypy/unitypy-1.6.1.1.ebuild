@@ -14,8 +14,8 @@ MY_PN="UnityPy"
 MY_P="${MY_PN}-${MY_PV}"
 
 # Use commit of specific version
-GIT_COMMIT="fb2f5f516da5e4fad3924b1087137efa40103b1f"
-SRC_URI="https://github.com/K0lb3/UnityPy/archive/${GIT_COMMIT}.tar.gz -> ${MY_P}.tar.gz"
+GIT_COMMIT="f682b8a371727d9e5e0769e8124713e2d18b7e0b"
+SRC_URI="https://github.com/K0lb3/UnityPy/archive/${GIT_COMMIT}.tar.gz -> ${MY_PN}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${GIT_COMMIT}"
 
 LICENSE="MIT"
@@ -23,7 +23,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	app-arch/brotli
+	app-arch/brotli[python]
 	dev-python/lz4
 	dev-python/pillow
 	dev-python/texture2ddecoder

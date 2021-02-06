@@ -14,7 +14,7 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
-	app-arch/brotli
+	app-arch/brotli[python]
 	dev-python/lz4
 	dev-python/pillow
 	dev-python/texture2ddecoder
