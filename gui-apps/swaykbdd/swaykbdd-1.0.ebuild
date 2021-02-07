@@ -19,5 +19,8 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND="gui-wm/sway"
+DEPEND="
+	dev-libs/json-c
+	gui-wm/sway
+"
 RDEPEND="${DEPEND}"
