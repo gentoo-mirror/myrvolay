@@ -48,5 +48,7 @@ Please feel free to contact me if there is an issue with any of those, or if you
   * [fr-afnor](https://github.com/myrvogna/fr-afnor): My implementation of the new French AZERTY layout (AFNOR NF Z71-300) for the Linux console keymap
 * sys-firmware
   * [brcm43456-firmware](https://github.com/RPi-Distro/firmware-nonfree): Firmware for the BCM3456 WiFi/BT chip of the Raspberry Pi 400
+* sys-fs
+  * [vramfs](https://github.com/Overv/vramfs): VRAM-based filesystem for Linux
 * sys-power
   * [gwe](https://gitlab.com/leinardi/gwe): GreenWithEnvy, system utility for information, fan control and overclocking Nvidia GPUs
