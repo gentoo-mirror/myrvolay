@@ -1,0 +1,11 @@
+BDEPEND=dev-libs/clhpp dev-util/opencl-headers virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=VRAM-based filesystem for Linux
+EAPI=7
+HOMEPAGE=https://github.com/Overv/vramfs
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=sys-fs/fuse virtual/opencl
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=f7b141c58a1c3b1d03a02e6416acb926
