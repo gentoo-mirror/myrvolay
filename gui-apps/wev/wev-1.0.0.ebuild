@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Wayland event viewer"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/wev"
-SRC_URI="https://git.sr.ht/~sircmpwn/wev/archive/${PV}.tar.gz -> {P}.tar.gz"
+SRC_URI="https://git.sr.ht/~sircmpwn/wev/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -16,7 +16,10 @@ DEPEND="
 	x11-libs/libxkbcommon
 "
 RDEPEND="${DEPEND}"
-BDEPEND="app-text/scdoc"
+BDEPEND="
+	app-text/scdoc
+	virtual/pkgconfig
+"
 
 src_install() {
 	export PREFIX="${EPREFIX}/usr"
