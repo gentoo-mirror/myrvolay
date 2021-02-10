@@ -7,7 +7,7 @@ inherit cmake
 
 DESCRIPTION="Library for interfacing games with a locally running Discord desktop client."
 HOMEPAGE="https://github.com/discord/discord-rpc"
-SRC_URI="https://github.com/discord/discord-rpc/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/discord/discord-rpc/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

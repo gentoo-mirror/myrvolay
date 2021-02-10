@@ -8,7 +8,4 @@
 	<upstream>
 		<remote-id type="github">discord/discord-rpc</remote-id>
 	</upstream>
-	<longdescription>
-		Library for interfacing games with a locally running Discord desktop client.
-	</longdescription>
 </pkgmetadata>
