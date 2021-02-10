@@ -8,10 +8,7 @@
 	<upstream>
 		<remote-id type="github">fulhax/ncpamixer</remote-id>
 	</upstream>
-	<longdescription>
-		An ncurses mixer for PulseAudio inspired by pavucontrol.
-	</longdescription>
 	<use>
-		<flag name="wide">Add ncurses widecharacter support</flag>
+		<flag name="wide">Add ncurses wide characters support</flag>
 	</use>
 </pkgmetadata>
