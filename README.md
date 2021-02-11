@@ -1,15 +1,15 @@
 # myrvolay
 myrvogna's personal Gentoo overlay. Do not try to make sense of the name – it does not work, indeed.
 
-Primarily made for my own convenience and a bit of inexperience might reveal itself there and there, that notwithstanding I believe every single package in here to be at least decent enough for use by whoever is so inclined.
+Initially made for own convenience, though I figured out it could perhaps be convenient for other people as well. A bit of inexperience might still reveal there and there, but I have gotten over the older packages and improved them to what I believe to be much higher standards. Every single ebuild in here should be at least decent enough for use by whoever so inclined.
 
-My overlay is registered on the list of repositories at https://repos.gentoo.org/, so you can enable it with `eselect repository enable myrvolay`.
+My overlay is registered on the list of repositories at https://repos.gentoo.org/, so you can enable it with `eselect repository enable myrvolay`. I suggest masking the overlay's content by default by adding `*/*::myrvolay` in package.mask, and selectively unmasking the packages you want in package.unmask (ex: `dev-python/yams::myrvolay`) – not because I lack trust in my own work, but because this is good practice.
 
-Please feel free to contact me if there is an issue with any of those, or if you have an improvement to suggest – I will be glad~
+Please feel free to contact me if there is an issue with anything – no matter how trivial! – or if you have an improvement to suggest – I will be glad~
 
 ### Todo list ###
-- Review older ebuilds and improve quality (most likely remove redundancies) if needed
 - Try to test everything on arm64 and add to keywords if results are successful
+– Improve the still functional but lackluster sys-power/gwe
 
 ### Overlay content ###
 * app-crypt
