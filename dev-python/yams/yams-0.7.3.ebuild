@@ -12,8 +12,8 @@ DESCRIPTION="A Last.FM scrobbler for MPD (Yet Another Mpd Scrobbler)"
 HOMEPAGE="https://github.com/Berulacks/yams"
 
 if [[ ${PV} == 9999 ]]; then
-	inherit git-r3
 	EGIT_REPO_URI="https://github.com/Berulacks/yams.git"
+	inherit git-r3
 else
 	SRC_URI="https://github.com/Berulacks/yams/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
@@ -32,8 +32,8 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 python_prepare_all() {
-	# Change application name so the .egg-info directory
-	# has the same name as the Python package
+	# Change application name so the .egg-info directory has the
+	# same name as the Python site-package one for consistency
 	sed -e "s/YAMScrobbler/yams/" -i setup.py || die
 
 	distutils-r1_python_prepare_all
@@ -41,5 +41,6 @@ python_prepare_all() {
 
 python_install_all() {
 	systemd_douserunit yams.service
+
 	distutils-r1_python_install_all
 }

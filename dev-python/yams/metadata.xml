@@ -8,7 +8,4 @@
 	<upstream>
 		<remote-id type="github">Berulacks/yams</remote-id>
 	</upstream>
-	<longdescription>
-		A python3 Last.FM scrobbler for MPD.
-	</longdescription>
 </pkgmetadata>
