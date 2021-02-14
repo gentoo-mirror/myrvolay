@@ -8,7 +8,4 @@
 	<upstream>
 		<remote-id type="gitlab">leinardi/gwe</remote-id>
 	</upstream>
-	<longdescription>
-		NVIDIA settings alternative with overclocking, fan control, and information display.O
-	</longdescription>
 </pkgmetadata>
