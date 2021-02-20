@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit linux-info systemd
+inherit linux-info systemd toolchain-funcs
 
 DESCRIPTION="Dell Inspiron and Latitude utilities"
 HOMEPAGE="https://launchpad.net/i8kutils"
@@ -33,11 +33,8 @@ pkg_pretend() {
 	fi
 }
 
-src_prepare() {
-	# Force the use of user's CFLAGS and LSFLAGS
-	sed -i -e 's:^\(CFLAGS\:=\)\(.*\):\1$(CFLAGS):' -i Makefile || die
-	sed -i -e 's:^\(LDFLAGS\:=\)\(.*\):\1$(LDFLAGS):' -i Makefile || die
-	default
+src_compile() {
+	emake CC="$(tc-getCC)" CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 }
 
 src_install() {
