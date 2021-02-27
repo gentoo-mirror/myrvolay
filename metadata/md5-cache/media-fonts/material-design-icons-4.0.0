@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DESCRIPTION=Google's Material Design icons fonts (all themes)
+EAPI=7
+HOMEPAGE=https://google.github.io/material-design-icons/
+IUSE=X
+KEYWORDS=~amd64 ~arm64
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=https://github.com/google/material-design-icons/archive/4.0.0.tar.gz
+_eclasses_=font	dd073b36fe3fd8b868c23bc23209db45
+_md5_=b9e0dbf976f83b7dff8a020526e6eea6
