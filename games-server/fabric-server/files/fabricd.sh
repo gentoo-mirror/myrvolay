@@ -1,4 +1,5 @@
 #!/bin/bash
+# Original copyright: Gordian Edenhofer <gordian.edenhofer@gmail.com>
 
 # The actual program name
 declare -r myname="fabricd"

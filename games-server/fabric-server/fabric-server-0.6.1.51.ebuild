@@ -7,16 +7,17 @@ EAPI=7
 # it is derived from (https://aur.archlinux.org/packages/fabric-server) in return
 
 # Confirmed to work perfectly on my setup with net-analyzer/netcat, sudo, and IcedTea
-# Very little if none testing has been done for the alternatives, the principes should
-# remain the same and it *should* work, but I will be glad to fix potential issues
+# Only superficial testing has been done for the added alternatives, although the
+# inner workings remain the same and I believe that it *should* work just as fine
 
-# Currently, can only install the latest version of the Minecraft server, and I have no
-# idea how I could change this. This use case should fit most, but still, I like perfection
+# As of now, the package can only and will always install the latest available version
+# of the Minecraft server. I would like to implement the ability to choose but I have
+# no idea whatsoever so far: any suggestion would be very much welcomed, as usual
 
 inherit java-pkg-2 systemd
 
-DESCRIPTION="Minecraft server with the Fabric mod loader"
-HOMEPAGE="https://fabricmc.net/"
+DESCRIPTION="Minecraft server with the next-generation Fabric mod loader"
+HOMEPAGE="https://fabricmc.net"
 SRC_URI="https://maven.fabricmc.net/net/fabricmc/fabric-installer/${PV}/fabric-installer-${PV}.jar"
 
 LICENSE="Apache-2.0"
@@ -106,7 +107,7 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog "World data is stored under /var/lib/fabric and the server runs as the fabric user."
+	elog "World data is stored under ${FABRICDIR} and the server runs as the fabric user."
 	elog "Use the fabricd script under /usr/bin/fabricd to start, stop, or backup the server."
 	elog "Adjust the configuration file /etc/conf.d/fabric to your liking."
 
@@ -117,6 +118,6 @@ pkg_postinst() {
 }
 
 pkg_postrm() {
-	[ -d "/var/lib/fabric" ] &&
+	[ -d "${FABRICDIR}" ] &&
 	elog "Saved game data in ${FABRICDIR} has been kept on your system."
 }

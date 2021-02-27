@@ -33,7 +33,7 @@ Please feel free to contact me if there is an issue with anything – no matter 
 * games-emulation
   * [duckstation](https://github.com/stenzek/duckstation): PlayStation 1 emulator
 * games-server
-  * [fabric-server](https://fabricmc.net/): Minecraft server with the next-generation modding toolchain
+  * [fabric-server](https://fabricmc.net): Minecraft server with the next-generation Fabric mod loader
 * games-util
   * [sidewinderd](https://github.com/tolga9009/sidewinderd): Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+
 * gui-apps
