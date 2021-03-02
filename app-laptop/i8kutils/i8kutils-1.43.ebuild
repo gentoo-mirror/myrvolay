@@ -7,7 +7,7 @@ inherit linux-info systemd toolchain-funcs
 
 DESCRIPTION="Dell Inspiron and Latitude utilities"
 HOMEPAGE="https://launchpad.net/i8kutils"
-SRC_URI="https://launchpad.net/i8kutils/trunk/${PV}/+download/${P/-/_}.tar.xz -> ${P}.tar.xz "
+SRC_URI="https://launchpad.net/i8kutils/trunk/${PV}/+download/${P/-/_}.tar.xz -> ${P}.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
