@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python3_{7..9} )
 inherit distutils-r1
 
-DESCRIPTION="Python cross-version bytecode library and disassembler"
+DESCRIPTION="An Earley-Algorithm context-free grammar parser toolkit"
 HOMEPAGE="
 		https://pypi.org/project/spark-parser
 		https://github.com/rocky/python-spark
