@@ -15,7 +15,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
-IUSE="discord +egl +evdev fbdev +gamepad gbm nogui qt5 retroachievements wayland +X"
+IUSE="discord +egl evdev fbdev +gamepad gbm nogui qt5 retroachievements wayland +X"
 
 # Either or both frontends must be built - no CLI is available
 # Setting this so the user has to make a choice does not end up with a non-usable software
