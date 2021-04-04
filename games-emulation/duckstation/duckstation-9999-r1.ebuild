@@ -9,36 +9,42 @@ DESCRIPTION="Fast Sony PlayStation (PSX) emulator"
 HOMEPAGE="https://github.com/stenzek/duckstation"
 EGIT_REPO_URI="https://github.com/stenzek/duckstation.git"
 EGIT_CHECKOUT_DIR="${WORKDIR}/${PN}"
+EGIT_SUBMODULES=()
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
-IUSE="discord egl +gamepad qt5 sdl wayland X"
+IUSE="discord +egl +evdev fbdev +gamepad gbm nogui qt5 retroachievements wayland +X"
 
 # Either or both frontends must be built - no CLI is available
 # Setting this so the user has to make a choice does not end up with a non-usable software
 # Do tell me if there is an use case (installing only the libraries?) I am not aware of here
 REQUIRED_USE="
-	|| ( qt5 sdl )
+	|| ( nogui qt5 )
+	?? ( fbdev gbm )
+	gbm? ( egl )
 	wayland? ( egl )
 "
 
-# Building without the X flag has not been tested extensively
-# It should work but some implied required dependencies might be not be listed here
+BDEPEND="
+	virtual/pkgconfig
+	wayland? ( kde-frameworks/extra-cmake-modules )
+"
 DEPEND="
+	evdev? ( dev-libs/libevdev )
 	gamepad? ( media-libs/libsdl2 )
-	sdl? ( media-libs/libsdl2 )
+	gbm? ( x11-libs/libdrm )
 	qt5? (
 			dev-qt/qtcore
 			dev-qt/qtgui
 			dev-qt/qtnetwork
 	)
-	wayland? ( kde-frameworks/extra-cmake-modules )
+	retroachievements? ( net-misc/curl[curl_ssl_gnutls] )
 	X? (
 			x11-libs/libX11
+			x11-libs/libXrandr
 	)
-	>=x11-libs/gtk+-3.24.20
 "
 RDEPEND="${DEPEND}"
 
@@ -47,15 +53,18 @@ S="${WORKDIR}/${PN}"
 
 src_configure() {
 	local mycmakeargs=(
+		-DBUILD_NOGUI_FRONTEND=$(usex nogui)
 		-DBUILD_QT_FRONTEND=$(usex qt5)
-		-DBUILD_SDL_FRONTEND=$(usex sdl)
+		-DENABLE_CHEEVOS=$(usex retroachievements)
+		–DENABLE_DISCORD_PRESENCE=$(usex discord)
+		-DUSE_DRMKMS=$(usex gbm)
 		-DUSE_EGL=$(usex egl)
+		-DUSE_EVDEV=$(usex evdev)
+		-DUSE_FBDEV=$(usex fbdev)
 		-DUSE_SDL2=$(usex gamepad)
 		-DUSE_WAYLAND=$(usex wayland)
 		-DUSE_X11=$(usex X)
-		–DENABLE_DISCORD_PRESENCE=$(usex discord)
 
-		# Override cmake.eclass defaults
 		-DBUILD_SHARED_LIBS=OFF
 	)
 
@@ -65,13 +74,17 @@ src_configure() {
 src_install() {
 	dodoc README.md
 
-	if use sdl; then
-		newicon -s 16 appimage/icon-16px.png duckstation-sdl
-		newicon -s 32 appimage/icon-32px.png duckstation-sdl
-		newicon -s 48 appimage/icon-48px.png duckstation-sdl
-		newicon -s 64 appimage/icon-64px.png duckstation-sdl
-		domenu appimage/duckstation-sdl.desktop
-		dobin "${BUILD_DIR}"/bin/duckstation-sdl
+	# Installing to /opt
+	insinto /opt/${PN}
+	doins -r "${BUILD_DIR}"/bin/.
+
+	if use nogui; then
+		newicon -s 16 appimage/icon-16px.png duckstation-nogui
+		newicon -s 32 appimage/icon-32px.png duckstation-nogui
+		newicon -s 48 appimage/icon-48px.png duckstation-nogui
+		newicon -s 64 appimage/icon-64px.png duckstation-nogui
+		domenu "${FILESDIR}"/duckstation-nogui.desktop
+		fperms +x /opt/${PN}/duckstation-nogui
 	fi
 
 	if use qt5; then
@@ -79,8 +92,8 @@ src_install() {
 		newicon -s 32 appimage/icon-32px.png duckstation-qt
 		newicon -s 48 appimage/icon-48px.png duckstation-qt
 		newicon -s 64 appimage/icon-64px.png duckstation-qt
-		domenu appimage/duckstation-qt.desktop
-		dobin "${BUILD_DIR}"/bin/duckstation-qt
+		domenu "${FILESDIR}"/duckstation-qt.desktop
+		fperms +x /opt/${PN}/duckstation-qt
 	fi
 }
 
