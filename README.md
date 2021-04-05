@@ -38,8 +38,6 @@ Please feel free to contact me if there is an issue with anything – no matter 
 * media-fonts
   * [material-design-icons](https://github.com/google/material-design-icons/): Google's Material Design icons
   * [renogare](https://www.creativefabrica.com/product/renogare/): A modern geometric sans serif typeface (notably used in Celeste)
-* net-im
-  * [discord-canary-bin](https://discord.com/): Installer for the alpha testing version of Discord
 * sys-apps
   * [fr-afnor](https://github.com/myrvogna/fr-afnor): My implementation of the new French AZERTY layout (AFNOR NF Z71-300) for the Linux console keymap
 * sys-firmware
