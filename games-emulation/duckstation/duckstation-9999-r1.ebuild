@@ -13,7 +13,6 @@ EGIT_SUBMODULES=()
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64"
 
 IUSE="discord +egl evdev fbdev +gamepad gbm nogui qt5 retroachievements wayland +X"
 
