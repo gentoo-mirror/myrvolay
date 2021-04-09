@@ -13,14 +13,10 @@ EGIT_SUBMODULES=()
 
 LICENSE="GPL-3"
 SLOT="0"
+IUSE="discord egl evdev fbdev +gamepad gbm +nogui qt5 retroachievements wayland X"
 
-IUSE="discord +egl evdev fbdev +gamepad gbm nogui qt5 retroachievements wayland +X"
-
-# Either or both frontends must be built - no CLI is available
-# Setting this so the user has to make a choice does not end up with a non-usable software
-# Do tell me if there is an use case (installing only the libraries?) I am not aware of here
+# Either or both frontends must be built
 REQUIRED_USE="
-	|| ( nogui qt5 )
 	?? ( fbdev gbm )
 	gbm? ( egl )
 	wayland? ( egl )
@@ -73,9 +69,9 @@ src_configure() {
 src_install() {
 	dodoc README.md
 
-	# Installing to /opt
+	# Binary and resources files must be in same directory – installing /opt
 	insinto /opt/${PN}
-	doins -r "${BUILD_DIR}"/bin/.
+	doins -r "${BUILD_DIR}"/bin/{database,inputprofiles,resources,shaders}
 
 	if use nogui; then
 		newicon -s 16 appimage/icon-16px.png duckstation-nogui
@@ -83,6 +79,7 @@ src_install() {
 		newicon -s 48 appimage/icon-48px.png duckstation-nogui
 		newicon -s 64 appimage/icon-64px.png duckstation-nogui
 		domenu "${FILESDIR}"/duckstation-nogui.desktop
+		doins "${BUILD_DIR}"/bin/duckstation-nogui
 		fperms +x /opt/${PN}/duckstation-nogui
 	fi
 
@@ -92,6 +89,7 @@ src_install() {
 		newicon -s 48 appimage/icon-48px.png duckstation-qt
 		newicon -s 64 appimage/icon-64px.png duckstation-qt
 		domenu "${FILESDIR}"/duckstation-qt.desktop
+		doins "${BUILD_DIR}"/bin/duckstation-qt
 		fperms +x /opt/${PN}/duckstation-qt
 	fi
 }
