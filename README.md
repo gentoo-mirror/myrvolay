@@ -23,14 +23,10 @@ Please feel free to contact me if there is an issue with anything – no matter 
   * [discord-rpc](https://github.com/discord/discord-rpc): Discord Rich Presence library, for (later) use as a system library for other packages
 * dev-python
   * [decompyle3](https://github.com/rocky/python-decompile3): Native Python cross-version decompiler and fragment decompiler
-  * *[injector](https://pypi.org/project/injector/)*: Python dependency injection framework, inspired by Guice
-  * *[py3nvml](https://pypi.org/project/py3nvml/)*: Python 3 Bindings for the NVIDIA Management Library
   * *[spark](https://github.com/rocky/python-spark)*: An Earley-Algorithm context-free grammar parser toolkit
   * *[texture2ddecoder](https://github.com/K0lb3/texture2ddecoder)*: A Python wrapper for Perfare's Texture2DDecoder 
   * [unitypy](https://github.com/K0lb3/UnityPy): A Unity asset extractor for Python based on AssetStudio.
   * *[xdis](https://github.com/rocky/python-xdis)*: Python cross-version bytecode library and disassembler 
-* games-emulation
-  * [duckstation](https://github.com/stenzek/duckstation): PlayStation 1 emulator
 * games-server
   * [fabric-server](https://fabricmc.net): Minecraft server with the next-generation Fabric mod loader
 * games-util
@@ -44,5 +40,3 @@ Please feel free to contact me if there is an issue with anything – no matter 
   * [brcm43456-firmware](https://github.com/RPi-Distro/firmware-nonfree): Firmware for the BCM3456 WiFi/BT chip of the Raspberry Pi 400
 * sys-fs
   * [vramfs](https://github.com/Overv/vramfs): VRAM-based filesystem for Linux
-* sys-power
-  * [gwe](https://gitlab.com/leinardi/gwe): GreenWithEnvy, system utility for information, fan control and overclocking Nvidia GPUs
