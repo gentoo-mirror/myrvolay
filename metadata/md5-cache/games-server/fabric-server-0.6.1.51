@@ -1,0 +1,16 @@
+BDEPEND=acct-group/fabric acct-user/fabric || ( >=virtual/jre-1.8:1.8 >=virtual/jdk-1.8:1.8 ) virtual/pkgconfig
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup unpack
+DEPEND=app-misc/screen || ( >=virtual/jre-1.8:1.8 >=virtual/jdk-1.8:1.8 ) idle? ( || ( net-analyzer/netcat net-analyzer/openbsd-netcat net-analyzer/nmap[ncat] ) ) usercmd? ( || ( app-admin/sudo app-admin/doas ) ) app-arch/tar app-shells/bash:* sys-apps/sed virtual/awk >=dev-java/java-config-2.2.0-r3
+DESCRIPTION=Minecraft server with the next-generation Fabric mod loader
+EAPI=7
+HOMEPAGE=https://fabricmc.net
+INHERIT=java-pkg-2 systemd
+IUSE=+idle eula +usercmd elibc_FreeBSD
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=acct-group/fabric acct-user/fabric app-misc/screen || ( >=virtual/jre-1.8:1.8 >=virtual/jdk-1.8:1.8 ) idle? ( || ( net-analyzer/netcat net-analyzer/openbsd-netcat net-analyzer/nmap[ncat] ) ) usercmd? ( || ( app-admin/sudo app-admin/doas ) ) app-arch/tar app-shells/bash:* sys-apps/sed virtual/awk >=dev-java/java-config-2.2.0-r3
+RESTRICT=bindist network-sandbox
+SLOT=0
+SRC_URI=https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.6.1.51/fabric-installer-0.6.1.51.jar
+_eclasses_=java-utils-2	2440f41421207d084e5e3f1fb001b34e	java-pkg-2	45c44ec10db6affb3ebee1ac72039888	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	systemd	fdf0d765c3f11f91fe54f8def9a8c0e6
+_md5_=5a9d1126bb3319093390ba9846cefa85

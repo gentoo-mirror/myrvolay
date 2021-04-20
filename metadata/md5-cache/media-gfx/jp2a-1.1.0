@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure
+DEPEND=curl? ( net-misc/curl ) sys-libs/ncurses virtual/jpeg
+DESCRIPTION=JPEG image to ASCII art converter
+EAPI=7
+HOMEPAGE=https://github.com/Talinx/jp2a
+IUSE=curl
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x64-macos ~x64-solaris
+LICENSE=GPL-2
+RDEPEND=curl? ( net-misc/curl ) sys-libs/ncurses virtual/jpeg
+SLOT=0
+SRC_URI=https://github.com/Talinx/jp2a/releases/download/v1.1.0/jp2a-1.1.0.tar.gz
+_md5_=1a698f4c2ec98dae6e5b75b9339d01f5

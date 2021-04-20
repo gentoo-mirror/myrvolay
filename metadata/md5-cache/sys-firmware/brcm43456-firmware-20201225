@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Firmware files for the integrated WiFi and Bluetooth on the Rpi400
+EAPI=7
+HOMEPAGE=https://github.com/RPi-Distro/firmware-nonfree
+KEYWORDS=~arm ~arm64
+LICENSE=Broadcom
+RESTRICT=mirror
+SLOT=0
+_md5_=a56e88ba7ee84f1ef9d6fe23a8182b53

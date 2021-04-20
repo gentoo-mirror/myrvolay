@@ -1,0 +1,12 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst
+DESCRIPTION=Utility to control BIOS fan control on some Dell laptops
+EAPI=7
+HOMEPAGE=https://github.com/TomFreudenberg/dell-bios-fan-control
+INHERIT=systemd
+KEYWORDS=~amd64
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=https://github.com/TomFreudenberg/dell-bios-fan-control/archive/a2c81a2918b15b97bdb1c6bf41233e4c2786d416.zip -> dell-bios-fan-control-1.0.zip
+_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	systemd	fdf0d765c3f11f91fe54f8def9a8c0e6
+_md5_=9d7496e23ee6080a7532d8050ab71955

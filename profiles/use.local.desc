@@ -1,0 +1,7 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+games-server/fabric-server:eula - Automatically accept the Minecraft EULA (https://account.mojang.com/documents/minecraft_eula) on installation
+games-server/fabric-server:idle - Enable suspending and resuming an idle server
+games-server/fabric-server:usercmd - Enable users with appropriate permissions to run commands as the server user
