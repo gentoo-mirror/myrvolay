@@ -6,9 +6,9 @@ app-laptop/dell-bios-fan-control 1.0: Utility to control BIOS fan control on som
 dev-libs/discord-rpc 3.4.0: Library for interfacing games with a locally running Discord desktop client.
 dev-python/decompyle3 9999: Native Python cross-version decompiler and fragment decompiler.
 dev-python/spark 1.8.9: An Earley-Algorithm context-free grammar parser toolkit
-dev-python/texture2ddecoder 1.0.2 9999: A Python wrapper for Perfare's Texture2DDecoder
-dev-python/unitypy 1.6.7.1 9999: A Unity asset extractor for Python based on AssetStudio
-dev-python/xdis 5.0.8: Python cross-version bytecode library and disassembler
+dev-python/texture2ddecoder 1.0.2: A Python wrapper for Perfare's Texture2DDecoder
+dev-python/unitypy 1.7.5 9999: A Unity asset extractor for Python based on AssetStudio
+dev-python/xdis 5.0.9: Python cross-version bytecode library and disassembler
 games-server/fabric-server 0.6.1.51: Minecraft server with the next-generation Fabric mod loader
 games-util/sidewinderd 0.4.3: Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+
 media-fonts/material-design-icons 4.0.0: Google's Material Design icons fonts (all themes)
