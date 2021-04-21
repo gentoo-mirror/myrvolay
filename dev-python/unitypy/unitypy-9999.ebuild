@@ -32,9 +32,7 @@ DEPEND="
 	app-arch/brotli[python,${PYTHON_USEDEP}]
 	dev-python/lz4[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
+	dev-python/tabulate[${PYTHON_USEDEP}]
 	dev-python/texture2ddecoder[${PYTHON_USEDEP}]
 "
 RDEPEND="${DEPEND}"
-BDEPEND="
-	dev-python/texture2ddecoder[${PYTHON_USEDEP}]
-"
