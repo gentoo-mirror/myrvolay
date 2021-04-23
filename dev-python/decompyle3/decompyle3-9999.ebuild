@@ -19,4 +19,4 @@ RDEPEND="
 	dev-python/spark[${PYTHON_USEDEP}]
 	dev-python/xdis[${PYTHON_USEDEP}]
 "
-DEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
