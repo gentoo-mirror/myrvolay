@@ -357,8 +357,7 @@ DEPEND=""
 RDEPEND=""
 
 src_prepare() {
-	# Necessary until https://github.com/abonander/mime_guess/pull/66 is merged
-	sed 's/x-gzip/gzip/' -i ../cargo_home/gentoo/mime_guess-2.0.3/src/mime_types.rs || die
+	# Crate fixed upstream, remove the now-redundant fix here
 	sed '/mime_guess/d' -i Cargo.toml || die
 
 	default
