@@ -8,7 +8,4 @@
 	<upstream>
 		<remote-id type="github">google/material-design-icons</remote-id>
 	</upstream>
-	<longdescription>
-		Google's Material Design icons fonts.
-	</longdescription>
 </pkgmetadata>
