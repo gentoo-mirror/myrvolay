@@ -1,9 +1,7 @@
 acct-group/fabric 0: A group for the Minecraft/Fabric server
 acct-user/fabric 0: A user for the Minecraft/Fabric server
-app-crypt/libsecret 0.20.4: GObject library for accessing the freedesktop.org Secret Service API
 app-emulation/vkd3d-proton 9999: Proton's Direct3D 12 implementation, forked from VKD3D
 app-laptop/dell-bios-fan-control 1.0: Utility to control BIOS fan control on some Dell laptops
-dev-libs/discord-rpc 3.4.0: Library for interfacing games with a locally running Discord desktop client.
 dev-python/decompyle3 9999: Native Python cross-version decompiler and fragment decompiler.
 dev-python/deemix 2.0.16: A barebone Deezer downloader library
 dev-python/deezer-py 0.0.15: A wrapper for all Deezer's API
@@ -16,7 +14,7 @@ dev-python/xdis 5.0.9: Python cross-version bytecode library and disassembler
 games-server/fabric-server 0.6.1.51: Minecraft server with the next-generation Fabric mod loader
 games-util/gamescope 9999: Micro-compositor formerly known as steamcompgr
 games-util/sidewinderd 0.4.3: Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+
-gui-apps/slurp 1.3.1: Select a region in a Wayland compositor and print it to the standard output
+gui-apps/slurp 1.3.2: Select a region in a Wayland compositor and print it to the standard output
 media-fonts/material-design-icons 4.0.0: Google's Material Design icons fonts (all themes)
 media-fonts/renogare 1.0: A modern geometric sans serif typeface (regular and soft variants)
 media-gfx/jp2a 1.1.0: JPEG image to ASCII art converter
