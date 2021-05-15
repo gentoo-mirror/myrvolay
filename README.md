@@ -46,4 +46,4 @@ Please feel free to contact me if there is an issue with anything – no matter 
 * sys-fs
   * [vramfs](https://github.com/Overv/vramfs): VRAM-based filesystem for Linux
 * www-servers
-  * [miniserve] (https://github.com/svenstaro/miniserve): Small, self-contained cross-platform CLI tool that allows you to just grab the binary and serve some file(s) via HTTP
+  * [miniserve](https://github.com/svenstaro/miniserve): Small, self-contained cross-platform CLI tool that allows you to just grab the binary and serve some file(s) via HTTP
