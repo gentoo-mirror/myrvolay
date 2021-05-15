@@ -10,7 +10,8 @@ HOMEPAGE="https://github.com/TomFreudenberg/dell-bios-fan-control"
 
 # Use commit of specific version
 GIT_COMMIT="a2c81a2918b15b97bdb1c6bf41233e4c2786d416"
-SRC_URI="https://github.com/TomFreudenberg/dell-bios-fan-control/archive/${GIT_COMMIT}.zip -> ${P}.zip"
+SRC_URI="https://github.com/TomFreudenberg/dell-bios-fan-control/archive/${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${GIT_COMMIT}"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -18,8 +19,6 @@ KEYWORDS="~amd64"
 
 RDEPEND=""
 DEPEND="${RDEPEND}"
-
-S="${WORKDIR}/${PN}-${GIT_COMMIT}"
 
 src_install() {
 	dobin dell-bios-fan-control

@@ -7,7 +7,7 @@ inherit cmake
 
 DESCRIPTION="Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+"
 HOMEPAGE="https://github.com/tolga9009/sidewinderd"
-SRC_URI="https://github.com/tolga9009/sidewinderd/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/tolga9009/sidewinderd/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

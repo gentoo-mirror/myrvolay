@@ -8,7 +8,4 @@
 	<upstream>
 		<remote-id type="github">myrvogna/fr-afnor</remote-id>
 	</upstream>
-	<longdescription>
-		Console keymap for the French new AZERTY layout AFNOR NF Z71-300.
-	</longdescription>
 </pkgmetadata>

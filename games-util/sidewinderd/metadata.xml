@@ -8,7 +8,4 @@
 	<upstream>
 		<remote-id type="github">tolga9009/sidewinderd</remote-id>
 	</upstream>
-	<longdescription>
-		Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+.
-	</longdescription>
 </pkgmetadata>
