@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm preinst prepare
+DEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=TETR.IO desktop client
+EAPI=7
+HOMEPAGE=https://tetr.io
+INHERIT=xdg desktop pax-utils
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+SLOT=0
+SRC_URI=https://tetr.io/about/desktop/builds/TETR.IO%20Setup.tar.gz -> tetrio-desktop-bin-8.0.0.tar.gz
+_eclasses_=xdg-utils	ff2ff954e6b17929574eee4efc5152ba	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	desktop	c0d27bf73aa08ca05b663dbd31fbef28	pax-utils	d3fc79d3d50544347e324864f95206e2
+_md5_=046d32dec6558bdb145891777b4b6ae5

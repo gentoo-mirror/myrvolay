@@ -11,6 +11,7 @@ dev-python/spotipy 2.18.0: A lightweight Python library for the Spotify Web API
 dev-python/texture2ddecoder 1.0.2: A Python wrapper for Perfare's Texture2DDecoder
 dev-python/unitypy 1.7.6 9999: A Unity asset extractor for Python based on AssetStudio
 dev-python/xdis 5.0.9: Python cross-version bytecode library and disassembler
+games-arcade/tetrio-desktop-bin 8.0.0: TETR.IO desktop client
 games-server/fabric-server 0.6.1.51: Minecraft server with the next-generation Fabric mod loader
 games-util/gamescope 9999: Micro-compositor formerly known as steamcompgr
 games-util/sidewinderd 0.4.3: Linux support for Microsoft SideWinder X4 / X6 and Logitech G103 / G105 / G710+
