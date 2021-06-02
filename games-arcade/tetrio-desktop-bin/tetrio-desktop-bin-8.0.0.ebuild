@@ -29,8 +29,8 @@ src_install() {
 	pax-mark -m "${ED}"/opt/${MY_PN}/${MY_PN}
 
 	# Icons taken from the .deb
-	newicon -s 256 "${FILESDIR}/icon-256px.png" tetrio-desktop
-	newicon -s 512 "${FILESDIR}/icon-256px.png" tetrio-desktop
+	newicon -s 256 "${FILESDIR}/icon-256px.png" tetrio-desktop.png
+	newicon -s 512 "${FILESDIR}/icon-256px.png" tetrio-desktop.png
 
 	make_desktop_entry "tetrio-desktop" "TETR.IO Desktop" "tetrio-desktop" "Game;"
 }
