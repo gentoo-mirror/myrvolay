@@ -5,3 +5,15 @@
 games-server/fabric-server:eula - Automatically accept the Minecraft EULA (https://account.mojang.com/documents/minecraft_eula) on installation
 games-server/fabric-server:idle - Enable suspending and resuming an idle server
 games-server/fabric-server:usercmd - Enable users with appropriate permissions to run commands as the server user
+x11-misc/oomox:base16 - Build the import and export plugin to support color palettes from the Base16 project
+x11-misc/oomox:icons-archdroid - Build the Archdroid icons plugin
+x11-misc/oomox:icons-gnomecolors - Build the GNOME-colors icons plugin
+x11-misc/oomox:icons-numix - Build the Numix icons plugin
+x11-misc/oomox:icons-papirus - Build the Papirus icons plugin
+x11-misc/oomox:icons-suruplus - Build the Suru++ icons plugin
+x11-misc/oomox:icons-suruplus-aspromauros - Build the Suru++ Asprómauros icons plugin
+x11-misc/oomox:importcolors - Build the import plugin to get color palettes from images
+x11-misc/oomox:spotify - Build the export plugin to apply color palettes to Spotify desktop player
+x11-misc/oomox:theme-arc - Build the Arc theme plugin
+x11-misc/oomox:theme-materia - Build the Materia theme plugin
+x11-misc/oomox:theme-oomox - Build the Oomox theme plugin

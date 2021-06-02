@@ -6,6 +6,7 @@ dev-python/decompyle3 9999: Native Python cross-version decompiler and fragment 
 dev-python/deemix 2.0.16: A barebone Deezer downloader library
 dev-python/deezer-py 0.0.15: A wrapper for all Deezer's API
 dev-python/pycryptodomex 3.10.1: A self-contained cryptographic library for Python (under the Crypto package)
+dev-python/pystache 0.5.4: Mustache for Python
 dev-python/spark 1.8.9: An Earley-Algorithm context-free grammar parser toolkit
 dev-python/spotipy 2.18.0: A lightweight Python library for the Spotify Web API
 dev-python/texture2ddecoder 1.0.2: A Python wrapper for Perfare's Texture2DDecoder
@@ -24,3 +25,4 @@ sys-apps/fr-afnor 0.1: AFNOR NF Z721-300 AZERTY keymap for the Linux console
 sys-firmware/brcm43456-firmware 20201225: Firmware files for the integrated WiFi and Bluetooth on the Rpi400
 sys-fs/vramfs 9999: VRAM-based filesystem for Linux
 www-servers/miniserve 0.14.0: CLI tool to serve files and dirs over HTTP
+x11-misc/oomox 1.13.3: Application for generating color variatons of GTK themes and terminal palette
