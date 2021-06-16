@@ -2,6 +2,7 @@ acct-group/fabric 0: A group for the Minecraft/Fabric server
 acct-user/fabric 0: A user for the Minecraft/Fabric server
 app-emulation/vkd3d-proton 9999: Proton's Direct3D 12 implementation, forked from VKD3D
 app-laptop/dell-bios-fan-control 1.0: Utility to control BIOS fan control on some Dell laptops
+dev-libs/discord-rpc 3.4.0: Library for interfacing games with a locally running Discord desktop client.
 dev-python/decompyle3 9999: Native Python cross-version decompiler and fragment decompiler.
 dev-python/deemix 2.0.16: A barebone Deezer downloader library
 dev-python/deezer-py 0.0.15: A wrapper for all Deezer's API
