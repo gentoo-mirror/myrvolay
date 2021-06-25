@@ -4,8 +4,8 @@
 EAPI=7
 
 DESCRIPTION="AFNOR NF Z721-300 AZERTY keymap for the Linux console"
-HOMEPAGE="https://github.com/myrvogna/fr-afnor.git"
-SRC_URI="https://github.com/myrvogna/fr-afnor/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://git.electrosphe.re/myrvogna/fr-afnor"
+SRC_URI="https://git.electrosphe.re/myrvogna/fr-afnor/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
