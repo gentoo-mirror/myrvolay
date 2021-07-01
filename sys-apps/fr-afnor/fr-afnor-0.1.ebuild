@@ -14,6 +14,8 @@ KEYWORDS="~amd64 ~arm64"
 DEPEND="sys-apps/kbd"
 RDEPEND="${DEPEND}"
 
+S="${WORKDIR}/${PN}"
+
 src_install() {
 	insinto /usr/share/keymaps/i386/azerty/
 	doins -r fr-afnor.map.gz
