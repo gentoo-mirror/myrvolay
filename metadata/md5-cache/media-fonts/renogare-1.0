@@ -8,5 +8,5 @@ IUSE=X
 KEYWORDS=~amd64 ~arm64
 LICENSE=Renogare
 SLOT=0
-_eclasses_=font	b500e97c1ae30f830e84a95be6e9bd36
+_eclasses_=font	d31f12a0f6e13d56dc3062e76ae58a61
 _md5_=84021e845899f0dbc84b3260c2b85a91
