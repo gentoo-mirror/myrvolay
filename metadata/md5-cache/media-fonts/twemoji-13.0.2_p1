@@ -11,5 +11,5 @@ LICENSE=MIT CC-BY-4.0
 RESTRICT=bindist mirror
 SLOT=0
 SRC_URI=https://archives.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/t/twitter-twemoji-fonts-13.0.2-1.fc35.noarch.rpm
-_eclasses_=font	d31f12a0f6e13d56dc3062e76ae58a61
+_eclasses_=font	bc7d91ca9054e47ad87b5763214665a4
 _md5_=5421c531937c94d79d42778076ef9df9
