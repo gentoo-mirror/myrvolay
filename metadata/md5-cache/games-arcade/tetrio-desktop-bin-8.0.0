@@ -8,5 +8,5 @@ KEYWORDS=~amd64
 LICENSE=all-rights-reserved
 SLOT=0
 SRC_URI=https://tetr.io/about/desktop/builds/TETR.IO%20Setup.tar.gz -> tetrio-desktop-bin-8.0.0.tar.gz
-_eclasses_=xdg-utils	ac0e315a3688929e34ac75b139e7349a	xdg	4a14c5c24f121e7da66e5aab4a168c6e	desktop	021728fdc1b03b36357dbc89489e0f0d	pax-utils	91d47e5d20627c717aa878b9167c62a8
+_eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	desktop	021728fdc1b03b36357dbc89489e0f0d	pax-utils	91d47e5d20627c717aa878b9167c62a8
 _md5_=7bd0118e29cd2900380e529ab7bccc04
