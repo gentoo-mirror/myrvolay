@@ -3,16 +3,8 @@ acct-user/fabric 0: A user for the Minecraft/Fabric server
 app-emulation/vkd3d-proton 9999: Proton's Direct3D 12 implementation, forked from VKD3D
 app-laptop/dell-bios-fan-control 1.0: Utility to control BIOS fan control on some Dell laptops
 dev-libs/discord-rpc 3.4.0: Library for interfacing games with a locally running Discord desktop client.
-dev-python/decompyle3 9999: Native Python cross-version decompiler and fragment decompiler.
-dev-python/deemix 2.0.16: A barebone Deezer downloader library
-dev-python/deezer-py 0.0.15: A wrapper for all Deezer's API
 dev-python/pycryptodomex 3.10.1: A self-contained cryptographic library for Python (under the Crypto package)
 dev-python/pystache 0.5.4: Mustache for Python
-dev-python/spark 1.8.9: An Earley-Algorithm context-free grammar parser toolkit
-dev-python/spotipy 2.18.0: A lightweight Python library for the Spotify Web API
-dev-python/texture2ddecoder 1.0.2: A Python wrapper for Perfare's Texture2DDecoder
-dev-python/unitypy 1.7.6 9999: A Unity asset extractor for Python based on AssetStudio
-dev-python/xdis 5.0.9: Python cross-version bytecode library and disassembler
 games-arcade/tetrio-desktop-bin 8.0.0: TETR.IO desktop client
 games-server/fabric-server 0.6.1.51: Minecraft server with the next-generation Fabric mod loader
 games-util/gamescope 9999: Micro-compositor formerly known as steamcompgr
