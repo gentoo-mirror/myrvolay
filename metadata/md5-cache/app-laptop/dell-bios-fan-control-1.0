@@ -8,5 +8,5 @@ KEYWORDS=~amd64
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=https://github.com/TomFreudenberg/dell-bios-fan-control/archive/a2c81a2918b15b97bdb1c6bf41233e4c2786d416.tar.gz -> dell-bios-fan-control-1.0.tar.gz
-_eclasses_=toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
+_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
 _md5_=1f3a46c6667a793c874ecc26774de302
