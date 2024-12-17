@@ -12,5 +12,5 @@ RDEPEND=acct-group/fabric acct-user/fabric app-misc/screen || ( >=virtual/jre-1.
 RESTRICT=bindist network-sandbox
 SLOT=0
 SRC_URI=https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.6.1.51/fabric-installer-0.6.1.51.jar
-_eclasses_=java-utils-2	c610b1541a10e37cb26ab5b707a744f1	java-pkg-2	6e6478d8b78f18251c008bad32994df9	toolchain-funcs	fa554cc3cff825d21dfe3f24841e29cf	multilib	b2a329026f2e404e9e371097dda47f96	systemd	54bd206bb5c4efac6ae28b6b006713b0
+_eclasses_=java-utils-2	c610b1541a10e37cb26ab5b707a744f1	java-pkg-2	6e6478d8b78f18251c008bad32994df9	toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	systemd	54bd206bb5c4efac6ae28b6b006713b0
 _md5_=5a9d1126bb3319093390ba9846cefa85
